@@ -8,7 +8,7 @@ This file includes various bits and pieces to help you set up your development e
 #### Packages
 [How to install packages](https://atom.io/docs/v1.2.4/using-atom-atom-packages)
 
-##### Linter
+#### Linter
 You need the following packages installed to set up linting in Atom.
 - [linter](https://atom.io/packages/linter)
 - [linter-tidy](https://atom.io/packages/linter-tidy)
@@ -20,7 +20,7 @@ You need the following packages installed to set up linting in Atom.
 #### Packages
 [How to install packages](http://www.granneman.com/webdev/editors/sublime-text/packages/how-to-install-and-use-package-control/)
 
-##### Linter
+#### Linter
 You need the following packages installed to set up linting in Sublime Text 2.
 - [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
 - [SublimeLinter-tidy](https://packagecontrol.io/packages/SublimeLinter-html-tidy)
