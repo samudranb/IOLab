@@ -1,0 +1,22 @@
+.brand-logo {
+  margin-left: 20px;
+}
+
+.white-text {
+  color: white;
+}
+
+#event-title {
+  background-color: blue darken-4;
+  display: inline-block;
+  padding-left: 200px;
+}
+
+.card .card-image .card-title {
+  background-color: rgba(0,0,0,0.5);
+  /*color: black;*/
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: white;
+}
