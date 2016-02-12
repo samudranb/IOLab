@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Kitty Kounter</title>
+		<link rel="stylesheet" type="text/css" href="kounter.css">
+    <script type="text/javascript">
+      var katKounter = 0;
+      var dogKounter = 0;
+
+      function kountKat(){
+        katKounter +=1;
+
+        document.getElementById("katKounterElem").innerHTML = katKounter+" cats";
+
+      }
+
+
+      function kountDog(){
+        dogKounter +=1;
+
+        document.getElementById("dogKounterElem").innerHTML = dogKounter+ " dogs";
+
+      }
+    </script>
+	</head>
+
+	<body>
+		<header>
+			<h2 id="site-title">Kitty Kounter</h2>
+		</header>
+
+    <div class="kitty">
+      <a href="#" onclick="kountKat();"><img src="http://i.giphy.com/gyRWkLSQVqlPi.gif"></a>
+      <div id="katKounterElem">0
+      </div>
+		</div>
+
+    <div class="dog">
+      <a href="#" onclick="kountDog();"><img src="http://static.tumblr.com/q8dfwso/cTOm7x5ih/puppies.gif"></a>
+      <div id="dogKounterElem">0
+      </div>
+    </div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Kitty Kounter</title>
+		<link rel="stylesheet" type="text/css" href="kounter.css">
+    <script type="text/javascript">
+			function kount(e){
+				count = e.querySelector(".count").innerHTML;
+				e.querySelector(".count").innerHTML = parseInt(count, 10)+1;
+			}
+    </script>
+	</head>
+
+	<body>
+		<header>
+			<h2 id="site-title">Animal Kounter</h2>
+		</header>
+		<div class="animals">
+			<div class="animal" onclick="kount(this)">
+				<img src="http://i.giphy.com/gyRWkLSQVqlPi.gif" alt="kitty" />
+				<p class="count">0
+				</p>
+			</div>
+			<div class="animal" onclick="kount(this)">
+				<img src="http://i.giphy.com/gyRWkLSQVqlPi.gif" alt="kitty" />
+				<p class="count">0
+				</p>
+			</div>
+			<div class="animal" onclick="kount(this)">
+				<img src="http://i.giphy.com/gyRWkLSQVqlPi.gif" alt="kitty" />
+				<p class="count">0
+				</p>
+			</div>
+			<div class="animal" onclick="kount(this)">
+				<img src="http://i.giphy.com/gyRWkLSQVqlPi.gif" alt="kitty" />
+				<p class="count">0
+				</p>
+			</div>
+			<div class="animal" onclick="kount(this)">
+				<img src="http://i.giphy.com/gyRWkLSQVqlPi.gif" alt="kitty" />
+				<p class="count">0
+				</p>
+			</div>
+
+		</div>
+	</body>
+</html>

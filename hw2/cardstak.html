@@ -23,9 +23,12 @@
     </ul>
 
     <nav>
-      <div class="nav-wrapper blue darken-4">
-        <a href="#" class="brand-logo">CardStak</a>
-        <a href="#" id="event-title">Berkeley Startup Networking Night (10 Feb 2016)</a>
+      <div class="nav-wrapper blue darken-4 row">
+        <div class="col s0 l2">
+          <a href="#" class="brand-logo hide-on-med-and-down">CardStak</a>
+        </div>
+
+        <a href="#" id="event-title" class="s2 offset-s0 m2 offset-m0 l2 offset-l2">Berkeley Startup Networking Night (10 Feb 2016)</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
             <div class="input-field left">
@@ -41,9 +44,9 @@
       </div>
     </nav>
 
-    <div class="row">
+    <div class="row" id="masonry-grid">
       <!-- column 1 -->
-      <div class="col s6 m3">
+      <div class="col s12 m6 l3">
         <div class="card teal lighten-1">
           <div class="card-image">
               <img src="images/samudra.jpg">
@@ -57,6 +60,8 @@
             <a href="#"><i class="material-icons left">star</i></a>
           </div>
         </div>
+      </div>
+      <div class="col s12 m6 l3">
         <div class="card green lighten-1">
           <div class="card-image">
               <img src="https://media.licdn.com/media/p/2/000/11f/3a5/0c26bee.jpg">
@@ -71,8 +76,7 @@
           </div>
         </div>
       </div>
-<!-- column 2 -->
-      <div class="col s6 m3">
+      <div class="col s12 m6 l3">
         <div class="card teal lighten-1">
           <div class="card-image">
               <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAUHAAAAJGE3NzVjZDFjLWRhNGItNDBjYy1hMTVkLTI1YzJhMDJiZjE3Ng.jpg">
@@ -86,11 +90,13 @@
             <a href="#"><i class="material-icons left">star</i></a>
           </div>
         </div>
+      </div>
+      <div class="col s12 m6 l3">
         <div class="card teal lighten-1">
           <div class="card-image">
               <img src="https://media.licdn.com/media/p/7/005/0b4/1a5/25e7da0.jpg">
               <span class="card-title">Astika Gupta</span>
-            </div>
+          </div>
           <div class="card-content white-text">
             <p>A first year Masters student at UC Berkeley School of Information focussing on product design and user experience research. My 3.5 years of prior industry experience as a front-end web developer provides me with the apt technical expertise to implement my designs. Looking for summer internship opportunities.</p>
           </div>
@@ -100,8 +106,7 @@
           </div>
         </div>
       </div>
-      <!-- column 3 -->
-      <div class="col s6 m3">
+      <div class="col s12 m6 l3">
         <div class="card green lighten-1">
           <div class="card-image">
               <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAPKAAAAJGU4N2VlMDk0LWMyNzgtNGJjYS04OTlhLTk1ZTIyMjdiOThiYg.jpg">
@@ -115,6 +120,8 @@
             <a href="#"><i class="material-icons left">star</i></a>
           </div>
         </div>
+      </div>
+      <div class="col s12 m6 l3">
         <div class="card teal lighten-1">
           <div class="card-image">
               <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAUCAAAAJDQ4NmIwNzc3LTEwNWMtNDdmMC1iMjlkLTBlMTgxYWJiOWQ5Zg.jpg">
@@ -129,8 +136,7 @@
           </div>
         </div>
       </div>
-      <!-- column 3 -->
-      <div class="col s6 m3">
+      <div class="col s12 m6 l3">
         <div class="card green lighten-1">
           <div class="card-image">
               <img src="https://media.licdn.com/media/AAEAAQAAAAAAAATJAAAAJDMxOWZmOTcxLTEwNDItNGVjZC05M2RjLWU0NzI4ZDNkYTNiMQ.jpg">
@@ -144,6 +150,8 @@
             <a href="#"><i class="material-icons left">star</i></a>
           </div>
         </div>
+      </div>
+      <div class="col s12 m6 l3">
         <div class="card teal lighten-1">
           <div class="card-image">
               <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAKsAAAAJDNiZjNhMzUxLWZmNTItNDU0MC05NjU5LWEzYjRlODk5OTU3Mg.jpg">
@@ -165,5 +173,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <!-- Compiled and minified materialize.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/init.js"></script>
   </body>
 </html>
