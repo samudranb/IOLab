@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css from cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="cardstak.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">My Card</a></li>
+      <li><a href="#!">Saved Cards</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">My Staks</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Account Settings</a></li>
+      <!-- <li class="divider"></li> -->
+      <li><a href="#!">Logout</a></li>
+    </ul>
+
+    <nav>
+      <div class="nav-wrapper blue darken-4 row">
+        <div class="col s0 l2">
+          <a href="#" class="brand-logo hide-on-med-and-down">CardStak</a>
+        </div>
+
+        <a href="#" id="event-title" class="s2 offset-s0 m2 offset-m0 l2 offset-l2">Berkeley Startup Networking Night (10 Feb 2016)</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <div class="input-field left">
+              <input id="search" placeholder="Search">
+              <label for="search"><i class="material-icons">search</i></label>
+            </div>
+          </li>
+          <li><a class="waves-effect waves-blue btn-flat white-text">Send My Card</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">My Account<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row" id="masonry-grid">
+      <!-- column 1 -->
+      <div class="col s12 m6 l3">
+        <div class="card teal lighten-1">
+          <div class="card-image">
+              <img src="images/samudra.jpg">
+              <span class="card-title">Samudra Neelam Bhuyan</span>
+            </div>
+          <div class="card-content white-text">
+            <p>I am passionate about improving society by using technology to disrupt domains having entrenched thinking. Been involved in product design, development and marketing in different companies at various lifecycle stages, from ideation and designing the product in a funded startup to building tools and features for enterprise software.</p>
+          </div>
+          <div class="card-action teal lighten-2">
+            <a href="#"><i class="material-icons left">email</i></a>
+            <a href="#"><i class="material-icons left">star</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card green lighten-1">
+          <div class="card-image">
+              <img src="https://media.licdn.com/media/p/2/000/11f/3a5/0c26bee.jpg">
+              <span class="card-title">Christopher Hallas</span>
+            </div>
+          <div class="card-content white-text">
+            <p>Looking to bring more Berkeley grads to Building Robotics. Comfy, our product, is the first commercial IoT software to fully engage the occupant by allowing them to directly influence the temperature in their office. 80% of our occupants use Comfy because it gives them a sense of control over the building, and makes them more productive.</p>
+          </div>
+          <div class="card-action teal lighten-2">
+            <a href="#"><i class="material-icons left">email</i></a>
+            <a href="#"><i class="material-icons left">star</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card teal lighten-1">
+          <div class="card-image">
+              <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAUHAAAAJGE3NzVjZDFjLWRhNGItNDBjYy1hMTVkLTI1YzJhMDJiZjE3Ng.jpg">
+              <span class="card-title">Anand Rajagopal</span>
+            </div>
+          <div class="card-content white-text">
+            <p>Graduate student at UC Berkeley School of Information | Data Scientist at Autodesk</p>
+          </div>
+          <div class="card-action teal lighten-2">
+            <a href="#"><i class="material-icons left">email</i></a>
+            <a href="#"><i class="material-icons left">star</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card teal lighten-1">
+          <div class="card-image">
+              <img src="https://media.licdn.com/media/p/7/005/0b4/1a5/25e7da0.jpg">
+              <span class="card-title">Astika Gupta</span>
+          </div>
+          <div class="card-content white-text">
+            <p>A first year Masters student at UC Berkeley School of Information focussing on product design and user experience research. My 3.5 years of prior industry experience as a front-end web developer provides me with the apt technical expertise to implement my designs. Looking for summer internship opportunities.</p>
+          </div>
+          <div class="card-action teal lighten-2">
+            <a href="#"><i class="material-icons left">email</i></a>
+            <a href="#"><i class="material-icons left">star</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card green lighten-1">
+          <div class="card-image">
+              <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAPKAAAAJGU4N2VlMDk0LWMyNzgtNGJjYS04OTlhLTk1ZTIyMjdiOThiYg.jpg">
+              <span class="card-title">Luke Sungho Ahn</span>
+            </div>
+          <div class="card-content white-text">
+            <p>A left and right brain thinker</p>
+          </div>
+          <div class="card-action teal lighten-2">
+            <a href="#"><i class="material-icons left">email</i></a>
+            <a href="#"><i class="material-icons left">star</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card teal lighten-1">
+          <div class="card-image">
+              <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAUCAAAAJDQ4NmIwNzc3LTEwNWMtNDdmMC1iMjlkLTBlMTgxYWJiOWQ5Zg.jpg">
+              <span class="card-title">Divya Garg</span>
+            </div>
+          <div class="card-content white-text">
+            <p>I have 5 years of experience in Software Design and Development. Currently, my interests lie in Product/Program Management and UX Research. I am seeking summer internship opportunities in these areas.</p>
+          </div>
+          <div class="card-action teal lighten-2">
+            <a href="#"><i class="material-icons left">email</i></a>
+            <a href="#"><i class="material-icons left">star</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card green lighten-1">
+          <div class="card-image">
+              <img src="https://media.licdn.com/media/AAEAAQAAAAAAAATJAAAAJDMxOWZmOTcxLTEwNDItNGVjZC05M2RjLWU0NzI4ZDNkYTNiMQ.jpg">
+              <span class="card-title">Xiaoding Zhuo</span>
+            </div>
+          <div class="card-content white-text">
+            <p>Angilytics is developing a wearable solution for improving hypertension management. We are looking for engineers with experience on building hardware and firmware, as well as working on the LAUNCH program till April: http://launch.berkeley.edu/</p>
+          </div>
+          <div class="card-action teal lighten-2">
+            <a href="#"><i class="material-icons left">email</i></a>
+            <a href="#"><i class="material-icons left">star</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card teal lighten-1">
+          <div class="card-image">
+              <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAKsAAAAJDNiZjNhMzUxLWZmNTItNDU0MC05NjU5LWEzYjRlODk5OTU3Mg.jpg">
+              <span class="card-title">Mohammad Ghasemzadeh</span>
+            </div>
+          <div class="card-content white-text">
+            <p>Mohammad has launched three startups (two mobile apps and one web app) from scratch to over fifty thousand users and counting. Mohammad has also worked as an internal consultant for a Fortune-500 bank and as an external consultant for PWC Management Consulting.</p>
+          </div>
+          <div class="card-action teal lighten-2">
+            <a href="#"><i class="material-icons left">email</i></a>
+            <a href="#"><i class="material-icons left">star</i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified materialize.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
