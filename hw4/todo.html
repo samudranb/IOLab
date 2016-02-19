@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="todo.css">
+    <!--Import materialize.css from cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+
+    <!-- <div class="row" id="masonry-grid"> -->
+    <div class="row">
+      <!-- column 1 -->
+      <div class="col s12 m6 l6">
+        <div class="card green lighten-4">
+          <div class="card-title">
+              Todo
+          </div>
+          <div class="nobottompadding green lighten-5">
+            <div class="row">
+              <div class="col s9">
+                <input type="text" id="taskField" placeholder="Add your new task here">
+              </div>
+              <div class="col s3">
+                <input type="submit" onclick="addTask();" class="btn waves-effect waves-dark" value="Add">
+              </div>
+            </div>
+          </div>
+          <div class="todolist row" id="todolist">
+            <div class="todoitem col s9">
+              <p class="inline task">
+                Task 1
+              </p>
+              <a class="btn col inline push-s9">Done</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l6">
+        <div class="card red lighten-5">
+          <div class="card-title">
+            Completed tasks
+          </div>
+          <div class="divider">
+
+          </div>
+          <div class="card-content">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified materialize.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/todo.js"></script>
+  </body>
+</html>
