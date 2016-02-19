@@ -14,7 +14,6 @@
 
 .card .card-image .card-title {
   background-color: rgba(0,0,0,0.5);
-  /*color: black;*/
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
