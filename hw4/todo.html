@@ -22,35 +22,31 @@
           <div class="card-title">
               Todo
           </div>
-          <div class="nobottompadding green lighten-5">
+          <div class="nobottompadding green lighten-5" name="addtaskform">
             <div class="row">
-              <div class="col s9">
-                <input type="text" id="taskField" placeholder="Add your new task here">
+              <div class="col s11">
+                <input type="text" id="taskField" placeholder="Add your new task here" onkeypress="javascript: if(event.keyCode == 13) saveTask();">
               </div>
-              <div class="col s3">
-                <input type="submit" onclick="addTask();" class="btn waves-effect waves-dark" value="Add">
+              <div class="col s1">
+                <a onclick="saveTask()" class="btn btn-floating"><i class="material-icons right">add</i></a>
               </div>
             </div>
           </div>
-          <div class="todolist row" id="todolist">
-            <div class="todoitem col s9">
-              <p class="inline task">
-                Task 1
-              </p>
-              <a class="btn col inline push-s9">Done</a>
-            </div>
+
+          <div class="tasklist" id="todolist">
+            <!-- // addTask() adds the tasks here -->
           </div>
         </div>
       </div>
       <div class="col s12 m6 l6">
         <div class="card red lighten-5">
           <div class="card-title">
-            Completed tasks
+            Completed Tasks
           </div>
           <div class="divider">
-
           </div>
-          <div class="card-content">
+          <div class="tasklist" id="donelist">
+            <!-- // taskComplete() adds the tasks here -->
           </div>
         </div>
       </div>
@@ -64,5 +60,6 @@
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/drag-arrange.min.js"></script>
   </body>
 </html>

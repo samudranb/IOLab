@@ -1,4 +1,4 @@
-.card .card-title {
+.card-title {
   padding: 15px;
 }
 
@@ -6,16 +6,15 @@
   display: inline;
 }
 
-.todolist{
-  padding-left: 15px;
-  padding-bottom: 15px;
-}
-
 .nobottompadding {
-  padding-bottom: 0px;
+  padding-bottom: 0;
   padding-top: 10px;
 }
 
+.row {
+  padding-right: 10px;
+}
+
 .task {
-  margin-left: 20px;
+  margin-top: 10px;
 }
