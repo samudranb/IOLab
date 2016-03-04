@@ -1,0 +1,20 @@
+.card-title {
+  padding: 15px;
+}
+
+.inline {
+  display: inline;
+}
+
+.nobottompadding {
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+
+.row {
+  padding-right: 10px;
+}
+
+.task {
+  margin-top: 10px;
+}
