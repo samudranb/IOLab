@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to SoundCloudy</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css from cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="soundcloudy.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <nav class="orange">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">SoundCloudy</a>
+        <div class="right">
+          <form id="searchForm">
+            <div class="input-field right">
+              <input id="search" type="search" required>
+              <label for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <div class="row" id="masonry-grid"> -->
+    <div class="row">
+      <div class="col s12 m9">
+        <div class="row" id="searchResults">
+          <div class="col s12">
+
+            <h5 class="right vertical-padding">
+                Go ahead and search for something!
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div class="col s8 showinitial">
+          <img class="responsive-img" src="arrow-red.png" />
+        </div>
+        <div class="hide card">
+          <div class="card-content" id="playList">
+            <span class="card-title orange-text center">
+              Your Playlist
+            </span>
+            <div class="playlist-entries">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
+    <!-- Compiled and minified materialize.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="js/soundcloudy.js"></script>
+  </body>
+</html>

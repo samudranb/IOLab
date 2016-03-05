@@ -1,0 +1,33 @@
+.inline {
+  display: inline;
+}
+
+.nobottommargin {
+  margin-bottom: 0;
+  /*margin-top: 10px;*/
+}
+
+.brand-logo {
+	margin-left: 10px;
+}
+
+.card .song-title {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 100%;
+}
+
+.vertical-padding {
+  padding: 100px;
+}
+
+.orange-text {
+  color: #ff9800;
+}
+
+.playlist-entries .col {
+  padding-left: 0;
+}
+
+.clickable {
+  cursor: pointer;
+}
