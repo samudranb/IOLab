@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <h1>Welcome to ACME Aircraft Parts</h1>
+      <div class="divider"></div>
+      <div class="section">
+        <div class= "section">
+          <a href="{{ url_for('create_customer') }}" class="btn right">Add a Customer</a>
+        </div>
+        <h3>Customers:</h3>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th data-field="first_name">First Name</th>
+              <th data-field="last_name">Last Name</th>
+              <th data-field="company">Company</th>
+              <th data-field="email">Email</th>
+              <th data-field="phone">Phone</th>
+              <th data-field="city">City</th>
+              <th data-field="zip_code">Zip Code</th>
+            </tr>
+          </thead>
+          {% for customer in customers %}
+            {% for address in customer.addresses.all() %}
+            <tr>
+              <td>{{ customer.first_name }}</td>
+              <td>{{ customer.last_name }}</td>
+              <td>{{ customer.company }}</td>
+              <td>{{ customer.email }}</td>
+              <td>{{ customer.phone }}</td>
+              <td>{{ address.city }}</td>
+              <td>{{ address.zip_code }}</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <div>
+          <a href="{{ url_for('create_order') }}" class="btn right">Add an Order</a>
+        </div>
+        <h3>Orders:</h3>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th data-field="num_parts_ordered">Number of Parts</th>
+              <th data-field="total_spent">Total Spent</th>
+              <th data-field="customer_id">Customer ID</th>
+            </tr>
+          </thead>
+          {% for order in orders %}
+            <tr>
+              <td>{{ order.num_parts_ordered }}</td>
+              <td>{{ order.total_spent }}</td>
+              {% for order in order.customer.all() %}
+                <td>{{ order.id }}</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}
